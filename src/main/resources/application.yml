@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://transactiondb:UnxHf7E23k4R83pLJy9VatvDXZpcj1E77y6V6q4wf68LI33gRMcouIHifh2a3HQ0e8tMo6Wezcl8OnA9nrFj0Q==@transactiondb.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@transactiondb@
+      database: transactiondb
