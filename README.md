@@ -5,72 +5,22 @@
 
 [![Java11](https://img.shields.io/badge/devel-Java-brightgreen)](https://docs.oracle.com/en/java/javase/11)
 [![SpringBoot](https://img.shields.io/badge/framework-SpringBoot-brightgreen)](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle)
-[![Docker](https://img.shields.io/badge/container-Docker-brightgreen)](https://www.docker.com)
 </div>
 
-# FIAP Avaliação - Spring Framework: TransactionAPI
+# FIAP Avaliação - Cloud Development: TransactionAPI-Azure
 
 
 Projeto Java para autorização de transações de cartão de crédito fictício dos alunos da FIAP.
 
 > **Solução de banco de dados:**
 > 
-> Optamos pelo MongoDB devido a facilidade/velocidade no desenvolvimento.
+> Optamos pelo CosmosDB com Api mongoDB devido a facilidade/velocidade no desenvolvimento.
 > E sua flexibilidade e escala elástica pronta para o mercado.
 
-## Executando o projeto (com Docker)
-
-### 1 - Download do projeto no github:
-
-  ```
-  $ git clone https://github.com/wees-guimaraes/fiap-transactions.git
-  ```
-
-### 2 - Executar o docker-compose do projeto:
-#### no diretório do projeto execute o comando:
-  
- ~~~shell
-  docker-compose up 
- ~~~
 
 ### Documentação
 - Acesse a documentação no seu browser no endereço:
-http://localhost:8081/swagger-ui.html
+  https://transaction-api.azurewebsites.net/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/
 
-
-## Executando o projeto (Sem Docker)
-
-> **Download do projeto no github:**
-
-  ```
-  $ git clone https://github.com/wees-guimaraes/fiap-transactions.git
-  ```
-
-## Pré Requisitos
-
-- Gradle 7.3
-- Java 11
-- Mongodb 5.0
-
-## No Diretório do projeto:
-
-### 1 - Criando o jar
-
-    gradle build
-
-### 2 - Set a URL de conexão com o mongodb nas variáveis de ambiente:
-
-    export SPRING_DATASOURCE_URL=mongodb://localhost:27017/transactiondb
-
-
-### 3 - Executando a aplicação:
-
-    gradle bootRun
-
-
-### Documentação
-- Acesse a documentação no seu browser no endereço:
-  http://localhost:8080/swagger-ui.html
-
-### Postman Collection:
- - Importe a collection localizada na raiz do projeto: **TransactionAPI.postman_collection.json**
+<div align="center">
+<img src="https://lh3.googleusercontent.com/im9pipg6zIW6oNN73pZxXU4vvEepg4X0j20RBtYekJacBt2ZhTVicl9Zb7IEUApeAYi4rl0PLuhjZnod9I8Utu4Jf6sG7V78uJvOwCnvANrv6ukAI_RhvpnlzYxymGGS5pKUqVb-ojDdATvX85I0SAD-x54zj4IFzjCCcq9YXXf3Uk2mXvK7Y9sbd9Gq9M48oPqAkBvh6dnEJ6ieKgp9jWDhtQQFXec7QVZS_yXMzqkP5Bg-copVnRORxeH0xgnfwMRqt9g7SEQzhdu35mhBZuczLR8JMIvo5mRyD2cTt3JebXZq1BMgs81_x8hEd9QGhmJIXIWaHAWFt4ADHK8HCYOR9u-0tSF1v6xujNaYb85PuyrxJDNQ31rOtcS3LJF87aSo0qG9VRshrikN286YkAAe7XDvIASuSuQQQEphm4EuG-B4wKxSEvGQXPov6Oo_tRY4bDTfm_D1RIr-z5vrQ4HN3rcPHrkYEUfs3MviB4MogmSyTdnA50AVZNJT2ik7K0k9143AEyxgeRU-HV9dc7kCZ-3jCH__Ut1Kx_8poXf-Sey60Nt-Sko3xn0jzrz_zhYMa7VpGCt9DeP-c0leQner5O2VLkLda-sjuEP_ppjGK7ylTkHrz7Xal8q7COedCBz83nDcw7llBVBTDBikbkr9A1V5VjZ0qmEvzmhjvKVdwBGApJn7o6VIXUtYCB-5cmlT_HsrmSxI_M82oH7vO-TdFxnMUm1hqAUxq6d3jxPQbY7wE6dkDkBP8o3fLMM=w881-h568-no?authuser=0" height="100px" alt="FIAP" class="center"/>
